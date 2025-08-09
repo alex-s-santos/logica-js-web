@@ -12,6 +12,7 @@ class1.addEventListener('click', function() {
     <p id="return1" class="return"></p>
     <br>
     <a href="./index.html" class="home">Voltar</a>
+    <br>
    `
 
    //Lógica
