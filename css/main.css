@@ -59,3 +59,7 @@ input {
     background-color: gray;
     border: 1px solid dodgerblue;
 }
+
+.return {
+    font-size: 1.5rem;
+}
