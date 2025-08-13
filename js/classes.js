@@ -41,10 +41,10 @@ class2.addEventListener('click', function() {
       <option></option>
       <option>+</option>
       <option>-</option>
-      <option>x</option>
-      <option>÷</option>
-      <option>X²</option>
-      <option>mod</option>
+      <option>*</option>
+      <option>/</option>
+      <option>**</option>
+      <option>%</option>
     </select>
     <input type="number" id="name1" class="input-num">
     <button class="btn" id="btn1">Executar</button>
