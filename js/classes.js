@@ -35,27 +35,38 @@ class1.addEventListener('click', function() {
 class2.addEventListener('click', function() {
    classes.innerHTML = `
 
-    <h3>Digite os números e selecione uma operação matemática</h3>
-    <input type="number" id="name1" class="input-num">
-    <select>
-      <option></option>
-      <option>+</option>
-      <option>-</option>
-      <option>*</option>
-      <option>/</option>
-      <option>**</option>
-      <option>%</option>
-    </select>
-    <input type="number" id="name1" class="input-num">
-    <button class="btn" id="btn1">Executar</button>
+    <h3>Digite os números e execute para ver os resultados</h3>
+    <input type="number" id="number1-2" class="input-num" placeholder="1º Número">
+    <input type="number" id="number2-2" class="input-num" placeholder="2º Número">
+    <button class="btn" id="btn2">Executar</button>
     <br>
-    <p id="return1" class="return"></p>
+    <p id="return2" class="return"></p>
     <br>
     <a href="./index.html" class="home">Voltar</a>
     <br>
-   `
+   `;
 
    //Lógica
+   let number1_2 = document.querySelector("#number1-2");
+   let number2_2 = document.querySelector("#number2-2");
+   let btn2 = document.querySelector("#btn2");
+  let return2 = document.querySelector("#return2");
+
+   btn2.addEventListener('click', function() {
+      return2.innerHTML = `
+         ${number1_2.value} + ${number2_2.value} = ${Number(number1_2.value) + Number(number2_2.value)}
+         <br>
+         ${number1_2.value} - ${number2_2.value} = ${Number(number1_2.value) - Number(number2_2.value)}
+         <br>
+         ${number1_2.value} x ${number2_2.value} = ${Number(number1_2.value) * Number(number2_2.value)}
+         <br>
+         ${number1_2.value} ÷ ${number2_2.value} = ${Number(number1_2.value) / Number(number2_2.value)}
+         <br>
+         ${number1_2.value}<sup>${number2_2.value}</sup> = ${Number(number1_2.value) ** Number(number2_2.value)}
+         <br>
+         ${number1_2.value} mod ${number2_2.value} = ${Number(number1_2.value) % Number(number2_2.value)}
+      `;
+   });
+
 
 });
-
